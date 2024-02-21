@@ -1,31 +1,23 @@
 #!/bin/bash
+# Description Pushh random ggek jokes on github to make it look good
 
-# Description Create a script start by a cron who will randomly push stuff on this repo to make my github look good
 
-# * Pseudo code
-
+# Go to the directory
 cd ~/Documents/Dev/eat_your_green
 
-# TODO Create a script that will randomly get a jobs via api ??
+# Generate a random number between 0 and 5
+random_number=$((RANDOM % 6))
 
-# TODO Make a for loop to push between 0 to 5 jokes
-for ((i=0; i<5; i++))
+# Loop through the random number
+for ((i=0; i<1; i++))
 do
-    # TODO Add jokes to a file
+    # Add jokes to a file
     curl -X GET \
-    'https://geek-jokes.sameerkumar.website/api?format=json' >> tism.txt
-    # TODO Make a git add
-    git add .
+    'https://geek-jokes.sameerkumar.website/api?format=json' | jq -r '.joke' >> tism.txt
 
-    # TODO Make a git commit with a random message using this api : https://whatthecommit.com/index.txt
+    # Add the file, create the random commit message and push it
+    git add .
     commit_message=$(curl -s https://whatthecommit.com/index.txt)
     git commit -m "$commit_message"
-
-    # TODO Make a git push
     git push
 done
-
-
-# TODO Create a cron job that will run the script every 48 hours
-# Add the following line to your crontab file (run "crontab -e" to edit):
-# 0 0 */2 * * /bin/bash /home/barreauj/Documents/Dev/eat_your_green/script.sh
