@@ -5,11 +5,11 @@
 # Go to the directory
 cd ~/Documents/Dev/eat_your_green
 
-# Generate a random number between 0 and 5
-random_number=$((RANDOM % 6))
+# Generate a random number between 0 and 3
+random_number=$((RANDOM % 4))
 
 # Loop through the random number
-for ((i=0; i<1; i++))
+for ((i=1; i<$random_number; i++))
 do
     # Add jokes to a file
     curl -X GET \
