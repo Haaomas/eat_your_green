@@ -6,7 +6,7 @@
 cd ~/Documents/Dev/eat_your_green
 
 # Generate a random number between 0 and 3
-random_number=$((RANDOM % 4 + 1))
+random_number=$((RANDOM % 7 + 0))
 
 # Loop through the random number
 for ((i=1; i<$random_number; i++))
