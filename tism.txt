@@ -53,3 +53,4 @@ Chuck Norris? roundhouse kick is so powerful, it can be seen from outer space by
 Chuck Norris puts his pants on one leg at a time, just like the rest of us. The only difference is, then he kills people.
 Chuck Norris solved the Travelling Salesman problem in O(1) time. Here's the pseudo-code: Break salesman into N pieces. Kick each piece to a different city.
 All arrays Chuck Norris declares are of infinite size, because Chuck Norris knows no bounds.
+Chuck Norris once kicked a horse in the chin. Its decendants are known today as Giraffes.
