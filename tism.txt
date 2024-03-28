@@ -52,3 +52,4 @@ Theres no place like 127.0.0.1
 Chuck Norris? roundhouse kick is so powerful, it can be seen from outer space by the naked eye.
 Chuck Norris puts his pants on one leg at a time, just like the rest of us. The only difference is, then he kills people.
 Chuck Norris solved the Travelling Salesman problem in O(1) time. Here's the pseudo-code: Break salesman into N pieces. Kick each piece to a different city.
+All arrays Chuck Norris declares are of infinite size, because Chuck Norris knows no bounds.
